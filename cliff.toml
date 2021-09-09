@@ -37,26 +37,27 @@ footer = """
 conventional_commits = true
 # regex for parsing and grouping commits
 commit_parsers = [
-    { message = "^.*: add", group = "Added"},
-    { message = "^.*: support", group = "Added"},
-    { message = "^.*: remove", group = "Removed"},
-    { message = "^.*: delete", group = "Removed"},
-    { message = "^test", group = "Fixed"},
-    { message = "^fix", group = "Fixed"},
-    { message = "^.*: fix", group = "Fixed"},
-    { message = "^.*", group = "Changed"},
+    { message = "^feat", group = "Features"},
+    { message = "^doc", group = "Documentation"},
+    { message = "^docs", group = "Documentation"},
     { message = "^config*", group = "Configuration"},
-    { message = "^feat*", group = "Features"},
     { message = "^fix*", group = "Bug Fixes"},
-    { message = "^doc*", group = "Documentation"},
+    { message = "^bugfix*", group = "Bug Fixes"},
     { message = "^perf*", group = "Performance"},
     { message = "^refactor*", group = "Refactor"},
     { message = "^style*", group = "Styling"},
     { message = "^test*", group = "Testing"},
     { message = "^chore\\(release\\): prepare for*", skip = true},
     { message = "^chore*", group = "Miscellaneous Tasks"},
-    { body = ".*security", group = "Security"},
-]
+    { body = ".*security", group = "Security"},    
+    { message = "^.*: add", group = "Added"},
+    { message = "^.*: support", group = "Added"},
+    { message = "^.*: remove", group = "Removed"},
+    { message = "^.*: delete", group = "Removed"},
+    { message = "^fix", group = "Fixed"},
+    { message = "^.*: fix", group = "Fixed"},
+    { message = "^.*", group = "Changed"}
+  ]
 # filter out the commits that are not matched by commit parsers
 filter_commits = false
 # glob pattern for matching git tags
