@@ -1,5 +1,8 @@
 name: Generate CHANGELOG.md
-on: [push]
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  push:
 jobs:
   changelog:
     name: Generate changelog
