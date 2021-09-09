@@ -4,7 +4,10 @@
 # changelog header
 header = """
 # Changelog
-All notable changes to this project will be documented in this file.\n
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n
 """
 # template for the changelog body
 # https://tera.netlify.app/docs/#introduction
@@ -34,6 +37,15 @@ footer = """
 conventional_commits = true
 # regex for parsing and grouping commits
 commit_parsers = [
+    { message = "^.*: add", group = "Added"},
+    { message = "^.*: support", group = "Added"},
+    { message = "^.*: remove", group = "Removed"},
+    { message = "^.*: delete", group = "Removed"},
+    { message = "^test", group = "Fixed"},
+    { message = "^fix", group = "Fixed"},
+    { message = "^.*: fix", group = "Fixed"},
+    { message = "^.*", group = "Changed"},
+    { message = "^config*", group = "Configuration"},
     { message = "^feat*", group = "Features"},
     { message = "^fix*", group = "Bug Fixes"},
     { message = "^doc*", group = "Documentation"},
