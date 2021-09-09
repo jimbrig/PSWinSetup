@@ -1,3 +1,5 @@
+name: Generate CHANGELOG.md
+on: [push]
 jobs:
   changelog:
     name: Generate changelog
