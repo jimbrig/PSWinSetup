@@ -1,7 +1,12 @@
-name: Build Module
-on: [push, pull_request]
+name: Build
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
 jobs:
-  test:
+  Test-Module:
     name: Run Tests
     runs-on: windows-latest
     strategy:
