@@ -1,0 +1,1656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-DefenderExclusions</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>DefenderExclusions</command:noun>
+      <maml:description>
+        <maml:para>This function detects and applies various Windows defender exclusions.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function adds exclusions for: * node.exe</maml:para>
+      <maml:para>* git.exe</maml:para>
+      <maml:para>* gitkraken.exe</maml:para>
+      <maml:para>* devenv.exe</maml:para>
+      <maml:para>* code.exe / code-insiders.exe ~/Dev/ * %APPDATA%\npm</maml:para>
+      <maml:para>* %APPDATA%\npm-cache</maml:para>
+      <maml:para>* ~/.dotfiles</maml:para>
+      <maml:para>* ~/scoop</maml:para>
+      <maml:para>* %PROGRAMDATA%\scoop</maml:para>
+      <maml:para>* %PROGRAMDATA%\chocolatey</maml:para>
+      <maml:para>* %PROGRAMDATA%\DockerDesktop</maml:para>
+      <maml:para>* %PROGRAMDATA%\nvm</maml:para>
+      <maml:para>* %PROGRAMDATA%\ssh</maml:para>
+      <maml:para>The primary aim is to improve developer machine performance.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-DefenderExclusions</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-PathVariable</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>PathVariable</command:noun>
+      <maml:description>
+        <maml:para>Adds a specified value to System %PATH% variable.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Adds a specified value to System %PATH% variable.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-PathVariable</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>addPath</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill addPath Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>addPath</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill addPath Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Add-PathVariable "C:\bin"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-WindowsDefenderExclusions</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>WindowsDefenderExclusions</command:noun>
+      <maml:description>
+        <maml:para>This function add Windows defender exclusions.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function in details adds exclusions for: * specified processes,</maml:para>
+      <maml:para>* specified folders,</maml:para>
+      <maml:para>* specified files,</maml:para>
+      <maml:para>* specified extensions.</maml:para>
+      <maml:para>The primary aim is to improve developer machine performance.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-WindowsDefenderExclusions</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ProcessesPaths</maml:name>
+          <maml:description>
+            <maml:para>Paths where specified processess should be search for.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>( ${env:ProgramFiles(x86)}, $env:ProgramW6432 )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>ProcessesList</maml:name>
+          <maml:description>
+            <maml:para>Processess to exclude within Windows Defender.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>( 'msbuild.exe', 'devenv.exe', 'sqlcmd.exe', 'sqllocaldb.exe', 'sqlservr.exe', 'sqlwriter.exe')</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>FoldersPaths</maml:name>
+          <maml:description>
+            <maml:para>Paths where specified folders should be search for.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>( $env:USERPROFILE )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>FoldersList</maml:name>
+          <maml:description>
+            <maml:para>Folders to exclude within Windows Defender.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>( 'MyProjects', '.nuget', '.babun' )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+          <maml:name>FilesList</maml:name>
+          <maml:description>
+            <maml:para>Files to exclude within Windows Defender.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>C:\pagefile.sys</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+          <maml:name>ExtensionsList</maml:name>
+          <maml:description>
+            <maml:para>File extensions to exclude within Windows Defender.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>( 'config', 'cs' , 'ldf', 'lnk', 'mdf', 'ttf', 'txt', 'xml', 'log' )</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ProcessesPaths</maml:name>
+        <maml:description>
+          <maml:para>Paths where specified processess should be search for.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>( ${env:ProgramFiles(x86)}, $env:ProgramW6432 )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>ProcessesList</maml:name>
+        <maml:description>
+          <maml:para>Processess to exclude within Windows Defender.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>( 'msbuild.exe', 'devenv.exe', 'sqlcmd.exe', 'sqllocaldb.exe', 'sqlservr.exe', 'sqlwriter.exe')</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>FoldersPaths</maml:name>
+        <maml:description>
+          <maml:para>Paths where specified folders should be search for.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>( $env:USERPROFILE )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>FoldersList</maml:name>
+        <maml:description>
+          <maml:para>Folders to exclude within Windows Defender.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>( 'MyProjects', '.nuget', '.babun' )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>FilesList</maml:name>
+        <maml:description>
+          <maml:para>Files to exclude within Windows Defender.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>C:\pagefile.sys</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+        <maml:name>ExtensionsList</maml:name>
+        <maml:description>
+          <maml:para>File extensions to exclude within Windows Defender.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>( 'config', 'cs' , 'ldf', 'lnk', 'mdf', 'ttf', 'txt', 'xml', 'log' )</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/a4099181/vagrant-provvin/blob/master/modules/defender.psm1</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/modules/defender.psm1</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AllPackageInfo</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AllPackageInfo</command:noun>
+      <maml:description>
+        <maml:para>This function gathers information about a particular installed program from 3-4 different sources:     - The Get-Package Cmdlet fromPowerShellGet/PackageManagement Modules     - Chocolatey CmdLine (if it is installed)     - Windows Registry     - The `Get-AppxPakcage` cmdlet (if the -IncludeAppx switch is used) All of this information is needed in order to determine the proper way to install/uninstall a program.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>See .SYNOPSIS</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AllPackageInfo</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ProgramName</maml:name>
+          <maml:description>
+            <maml:para>This parameter is OPTIONAL. This parameter takes a string that represents the name of the Program that you would like to gather information about. The name of the program does NOT have to be exact. For example, if you have 'python3' installed, you can simply use:     Get-AllAvailablePackages python</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IncludeAppx</maml:name>
+          <maml:description>
+            <maml:para>This parameter is OPTIONAL. This parameter is a switch. If used, information about available Appx (UWP) packages will also be returned.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ProgramName</maml:name>
+        <maml:description>
+          <maml:para>This parameter is OPTIONAL. This parameter takes a string that represents the name of the Program that you would like to gather information about. The name of the program does NOT have to be exact. For example, if you have 'python3' installed, you can simply use:     Get-AllAvailablePackages python</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IncludeAppx</maml:name>
+        <maml:description>
+          <maml:para>This parameter is OPTIONAL. This parameter is a switch. If used, information about available Appx (UWP) packages will also be returned.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code># Open an elevated PowerShell Session, import the module, and -</dev:code>
+        <dev:remarks>
+          <maml:para>PS&gt; Get-AllPackageInfo -IncludeAppX</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code># Open an elevated PowerShell Session, import the module, and -</dev:code>
+        <dev:remarks>
+          <maml:para>PS&gt; Get-AllPackageInfo openssh</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-ComputerName</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>ComputerName</command:noun>
+      <maml:description>
+        <maml:para>Returns the name of the Computer</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Returns the name of the Computer</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-ComputerName</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-ComputerName</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-Elevation</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>Elevation</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-Elevation</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-ExePath</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>ExePath</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-ExePath</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>ProgramName</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill ProgramName Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>OriginalSystemPath</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill OriginalSystemPath Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>OriginalEnvPath</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill OriginalEnvPath Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>FinalCommandName</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill FinalCommandName Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>ExpectedInstallLocation</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill ExpectedInstallLocation Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>ExpectedInstallLocation</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill ExpectedInstallLocation Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>FinalCommandName</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill FinalCommandName Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>OriginalEnvPath</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill OriginalEnvPath Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>OriginalSystemPath</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill OriginalSystemPath Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>ProgramName</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill ProgramName Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-IntroBanner</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>IntroBanner</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-IntroBanner</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Install-Choco</command:name>
+      <command:verb>Install</command:verb>
+      <command:noun>Choco</command:noun>
+      <maml:description>
+        <maml:para>Installs the Chocolatey Package Manager for Windows into the system.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Installs Chocolatey Package Manager with the default provided installation script from Chocolatey. Environmental variables are updated in order to use choco  without having the restart the console host. A powershell $PROFILE is also created (if necessary) before installation to allow the install script to add Chocolatey's specific profile and completion to the user $PROFILE.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Install-Choco</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>An installed chocolatey package manager that is ready to use by the user.</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- This function uses the standard way how to install Chocolatey package manager from chocolatey.org.</maml:para>
+        <maml:para>- This function requires admin privileges to work properly.</maml:para>
+        <maml:para>- This function requires a minimum of RemoteSigned Execution Policy to work properly.</maml:para>
+        <maml:para>- This function looks for and creates (if necessary) a default user powershell $PROFILE before running the installation script.</maml:para>
+        <maml:para>- This function optionally applies post-installation configurations to Chocolatey if desired.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Install-Choco
+Installs Chocolatey</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://chocolatey.org/</maml:linkText>
+        <maml:uri>https://chocolatey.org/</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Install-ChocoHelpers</command:name>
+      <command:verb>Install</command:verb>
+      <command:noun>ChocoHelpers</command:noun>
+      <maml:description>
+        <maml:para>Installs initial Chocolatey helper packages.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Installs the following:  - boxstarter  - choco-cleaner  - choco-package-list-backup  - instchoco  - chocolateygui  - 7zip.install</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Install-ChocoHelpers</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>&lt;Note for the Function&gt;</maml:para>
+        <maml:para>Initial Installations:</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Install-DotNetSDK</command:name>
+      <command:verb>Install</command:verb>
+      <command:noun>DotNetSDK</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Install-DotNetSDK</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Install-Git</command:name>
+      <command:verb>Install</command:verb>
+      <command:noun>Git</command:noun>
+      <maml:description>
+        <maml:para>&lt; A brief description of the function or script.&gt;</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>&lt;A longer description.&gt;</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Install-Git</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>&lt;Note for the Function&gt;</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-Unzip</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>Unzip</command:noun>
+      <maml:description>
+        <maml:para></maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Provides robust zip file extraction by attempting 3 possible methods.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-Unzip</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>zipfile</maml:name>
+          <maml:description>
+            <maml:para>Specify the zipfile location and name</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>outpath</maml:name>
+          <maml:description>
+            <maml:para>Specify the extract path for extracted files</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>zipfile</maml:name>
+        <maml:description>
+          <maml:para>Specify the zipfile location and name</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>outpath</maml:name>
+        <maml:description>
+          <maml:para>Specify the extract path for extracted files</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Extracts folder.zip to c:\folder
+Invoke-Unzip -zipfile c:\folder.zip -outpath c:\folder</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/TheTaylorLee/AdminToolbox</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Begin</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Begin</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Begin</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Failure</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Failure</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Failure</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Header</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Header</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Header</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Info</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Info</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Info</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Step</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Step</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Step</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>num</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill num Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>num</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill num Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Success</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Success</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Success</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Task</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Task</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Task</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>text</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill text Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>text</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill text Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Object</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/TheTaylorLee/AdminToolbox</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
