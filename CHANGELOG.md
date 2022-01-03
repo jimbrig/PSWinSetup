@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
 - Initialize changelog
 - Update README.md with badge
 - Add VERSIONS.md to github folder
+- Add roadmap and resources to README
+- Updated docs
 
 ### Feature
 
@@ -24,6 +26,22 @@ All notable changes to this project will be documented in this file.
 - Add awesome intro banner function
 - Add private unzip archive function
 - Many changes to module and build process
+- Add StartMenuLayout.json to .config
+- Update manifest
+- Add private Test-IsAdmin function
+- Add private Write-Log function
+- Add Godmod function
+- Add new backup functions
+- Chocolatey and boxstarter functions
+- Start menu config function
+- Add new system information functions
+- Add custom scripts
+- Add scoop functions
+- Get-User function
+- Installed-software function
+- Gitconfig function
+- Update XML docs configs
+- Stash configs
 
 ### Miscellaneous Tasks
 
@@ -40,6 +58,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2021-09-21T18:06:12Z
 - Autopublish 2021-09-21T18:07:44Z
 - Autopublish 2021-11-23T05:18:39Z
+- Autopublish 2021-12-30T23:03:19Z
 
 ### Config
 
@@ -49,6 +68,7 @@ All notable changes to this project will be documented in this file.
 - Re-structure git-cliff cliff.toml
 - Add 'infrastructure' group to cliff.toml
 - Restructure repo
+- Git ignore build directory
 
 ### Infrastructure
 
