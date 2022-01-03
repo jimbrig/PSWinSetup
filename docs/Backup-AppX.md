@@ -1,57 +1,74 @@
 ---
 external help file: PSWinSetup-help.xml
 Module Name: PSWinSetup
-online version: https://github.com/TheTaylorLee/AdminToolbox
+online version:
 schema: 2.0.0
 ---
 
-# Invoke-Unzip
+# Backup-AppX
 
 ## SYNOPSIS
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
 ```
-Invoke-Unzip [[-zipfile] <String>] [[-outpath] <String>] [<CommonParameters>]
+Backup-AppX [-WSAppPath] <String> [-WSAppOutputPath] <String> [-WSTools] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Provides robust zip file extraction by attempting 3 possible methods.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
-Extracts folder.zip to c:\folder
-Invoke-Unzip -zipfile c:\folder.zip -outpath c:\folder
-```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
-### -zipfile
-Specify the zipfile location and name
+### -WSAppOutputPath
+{{ Fill WSAppOutputPath Description }}
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -outpath
-Specify the extract path for extracted files
+### -WSAppPath
+{{ Fill WSAppPath Description }}
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WSTools
+{{ Fill WSTools Description }}
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: 2
 Default value: None
 Accept pipeline input: False
@@ -63,11 +80,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
+
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS
-
-[https://github.com/TheTaylorLee/AdminToolbox](https://github.com/TheTaylorLee/AdminToolbox)
-

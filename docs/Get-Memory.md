@@ -5,25 +5,19 @@ online version: https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add
 schema: 2.0.0
 ---
 
-# Install-ChocoHelpers
+# Get-Memory
 
 ## SYNOPSIS
-Installs initial Chocolatey helper packages.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
 ```
-Install-ChocoHelpers [<CommonParameters>]
+Get-Memory [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Installs the following:
- - boxstarter
- - choco-cleaner
- - choco-package-list-backup
- - instchoco
- - chocolateygui
- - 7zip.install
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
@@ -41,11 +35,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
+
 ## OUTPUTS
 
+### System.Object
 ## NOTES
-\<Note for the Function\>
-
-Initial Installations:
 
 ## RELATED LINKS

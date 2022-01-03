@@ -1,7 +1,7 @@
 ---
 external help file: PSWinSetup-help.xml
 Module Name: PSWinSetup
-online version: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide
+online version:
 schema: 2.0.0
 ---
 

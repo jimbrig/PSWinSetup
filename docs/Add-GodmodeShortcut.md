@@ -1,19 +1,19 @@
 ---
 external help file: PSWinSetup-help.xml
 Module Name: PSWinSetup
-online version: https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md
+online version:
 schema: 2.0.0
 ---
 
-# Install-DotNetSDK
+# Add-GodmodeShortcut
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Adds a desktop shortcut for the \`GodMode\` Windows Advanced Options.
 
 ## SYNTAX
 
 ```
-Install-DotNetSDK [<CommonParameters>]
+Add-GodmodeShortcut [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,12 +21,11 @@ Install-DotNetSDK [<CommonParameters>]
 
 ## EXAMPLES
 
-### Example 1
+### EXAMPLE 1
 ```
-PS C:\> {{ Add example code here }}
+Add-GodmodeShortcut
+# Now Desktop has a shortcut.
 ```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -35,10 +34,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
 ## OUTPUTS
 
-### System.Object
 ## NOTES
 
 ## RELATED LINKS

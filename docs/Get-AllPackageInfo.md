@@ -1,7 +1,7 @@
 ---
 external help file: PSWinSetup-help.xml
 Module Name: PSWinSetup
-online version: https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md
+online version:
 schema: 2.0.0
 ---
 
