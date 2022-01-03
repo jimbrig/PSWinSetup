@@ -1,4 +1,6 @@
-<#
+
+function Get-AllPackageInfo {
+    <#
     .SYNOPSIS
         This function gathers information about a particular installed program from 3-4 different sources:
             - The Get-Package Cmdlet fromPowerShellGet/PackageManagement Modules
@@ -26,22 +28,21 @@
 
         PS> Get-AllPackageInfo openssh
 #>
-function Get-AllPackageInfo {
     [CmdletBinding()]
     Param (
         [Parameter(
-            Mandatory=$False,
-            Position=0
+            Mandatory = $False,
+            Position = 0
         )]
         [string]$ProgramName,
 
-        [Parameter(Mandatory=$False)]
+        [Parameter(Mandatory = $False)]
         [switch]$IncludeAppx
     )
 
     if ($ProgramName) {
         # Generate regex string to loosely match Program Name
-        $PNRegexPrep = $([char[]]$ProgramName | foreach {"([\.]|[$_])+"}) -join ""
+        $PNRegexPrep = $([char[]]$ProgramName | foreach { "([\.]|[$_])+" }) -join ""
         $PNRegexPrep2 = $($PNRegexPrep -split "\+")[1..$($($PNRegexPrep -split "\+").Count)] -join "+"
         $PNRegex = "$([char[]]$ProgramName[0])+$PNRegexPrep2"
         # For example, $PNRegex string for $ProgramName 'nodejs' should be:
@@ -55,7 +56,7 @@ function Get-AllPackageInfo {
         $PSGetInstalledPrograms = Get-Package
 
         if ($ProgramName) {
-            $PSGetInstalledPackageObjectsFinal = $PSGetInstalledPrograms | Where-Object {$_.Name -match $PNRegex}
+            $PSGetInstalledPackageObjectsFinal = $PSGetInstalledPrograms | Where-Object { $_.Name -match $PNRegex }
         }
         else {
             $PSGetInstalledPackageObjectsFinal = $PSGetInstalledPrograms
@@ -103,14 +104,14 @@ function Get-AllPackageInfo {
         $CheckInstalledPrograms.Reverse()
 
         foreach ($Package in $PSGetInstalledPackageObjectsFinal) {
-            $RelevantMSIFile = $RelevantMSIFiles | Where-Object {$_.ProductName -eq $Package.Name}
+            $RelevantMSIFile = $RelevantMSIFiles | Where-Object { $_.ProductName -eq $Package.Name }
             if ($RelevantMSIFile) {
                 $Package | Add-Member -MemberType NoteProperty -Name "MSIFileItem" -Value $RelevantMSIFile.FileItem
                 $Package | Add-Member -MemberType NoteProperty -Name "MSILastWriteTime" -Value $RelevantMSIFile.FileItem.LastWriteTime
             }
 
             if ($null -ne $Package.TagId) {
-                $RegProperties = $CheckInstalledPrograms | Where-Object {$_.PSChildName -match $Package.TagId}
+                $RegProperties = $CheckInstalledPrograms | Where-Object { $_.PSChildName -match $Package.TagId }
                 $LastWriteTime = $(Get-Item $RegProperties.PSPath).LastWriteTime
                 $Package | Add-Member -MemberType NoteProperty -Name "RegLastWriteTime" -Value $LastWriteTime
             }
@@ -159,22 +160,22 @@ function Get-AllPackageInfo {
         $stderr = $Process.StandardError.ReadToEnd()
         $AllOutput = $stdout + $stderr
 
-        $ChocolateyInstalledProgramsPrep = $($stdout -split "`n")[1..$($($stdout -split "`n").Count-3)]
+        $ChocolateyInstalledProgramsPrep = $($stdout -split "`n")[1..$($($stdout -split "`n").Count - 3)]
 
         [System.Collections.ArrayList]$ChocolateyInstalledProgramObjects = @()
 
         foreach ($program in $ChocolateyInstalledProgramsPrep) {
             $programParsed = $program -split " "
             $PSCustomObject = [pscustomobject]@{
-                ProgramName     = $programParsed[0].Trim()
-                Version         = $programParsed[1].Trim()
+                ProgramName = $programParsed[0].Trim()
+                Version     = $programParsed[1].Trim()
             }
 
             $null = $ChocolateyInstalledProgramObjects.Add($PSCustomObject)
         }
 
         if ($ProgramName) {
-            $ChocolateyInstalledProgramObjectsFinal = $ChocolateyInstalledProgramObjects | Where-Object {$_.ProgramName -match $PNRegex}
+            $ChocolateyInstalledProgramObjectsFinal = $ChocolateyInstalledProgramObjects | Where-Object { $_.ProgramName -match $PNRegex }
         }
         else {
             $ChocolateyInstalledProgramObjectsFinal = $ChocolateyInstalledProgramObjects
@@ -190,7 +191,7 @@ function Get-AllPackageInfo {
         # Get all relevant AppX Package Info
         $AllAppxPackages = Get-AppxPackage -AllUsers
         if ($ProgramName) {
-            $AppxPackagesFinal = $AllAppxPackages | Where-Object {$_.Name -match $PNRegex}
+            $AppxPackagesFinal = $AllAppxPackages | Where-Object { $_.Name -match $PNRegex }
         }
         else {
             $AppxPackagesFinal = $AllAppxPackages
@@ -203,7 +204,7 @@ function Get-AllPackageInfo {
                     $ApplicationIdCheck = $AppxManifestContent -match "Application Id="
                     if ($ApplicationIdCheck) {
                         $AppxId = $($ApplicationIdCheck -split '"')[1].Trim()
-                        $LaunchString = 'explorer.exe shell:AppsFolder\'+ $_.PackageFamilyName + '!' + $AppxId
+                        $LaunchString = 'explorer.exe shell:AppsFolder\' + $_.PackageFamilyName + '!' + $AppxId
                         $_ | Add-Member -MemberType NoteProperty -Name "LaunchString" -Value $LaunchString
                     }
                     else {
@@ -218,9 +219,9 @@ function Get-AllPackageInfo {
     #endregion >> Check for installed Appx Programs
 
     [pscustomobject]@{
-        ChocolateyInstalledProgramObjects           = $ChocolateyInstalledProgramObjectsFinal
-        PSGetInstalledPackageObjects                = $PSGetInstalledPackageObjectsFinal
-        AppxAvailablePackages                       = $AppxPackagesFinal
-        RegistryProperties                          = $CheckInstalledProgramsFinal
+        ChocolateyInstalledProgramObjects = $ChocolateyInstalledProgramObjectsFinal
+        PSGetInstalledPackageObjects      = $PSGetInstalledPackageObjectsFinal
+        AppxAvailablePackages             = $AppxPackagesFinal
+        RegistryProperties                = $CheckInstalledProgramsFinal
     }
 }
